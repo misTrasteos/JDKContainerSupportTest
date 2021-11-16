@@ -5,17 +5,17 @@ This is a test about older JVM versions not properly retrieving available CPUs a
 Last OpenJDK 8 correctly detects docker run limits
 
 ```
-docker build -t mistrasteos/containersupport:8 .
+docker build -t mistrasteos/jdkcontainersupport:8 .
 [+] Building 1.7s (11/11) FINISHED
 
-docker run --rm -it mistrasteos/containersupport:8
+docker run --rm -it mistrasteos/jdkcontainersupport:8
 Runtime version, 1.8.0_312
 Available processors, 8
 Max memory, 1442840576
 Total memory, 98566144
 Free memory, 97024680
 
-docker run --cpus=1 --memory=100m --rm -it mistrasteos/containersupport:8
+docker run --cpus=1 --memory=100m --rm -it mistrasteos/jdkcontainersupport:8
 Runtime version, 1.8.0_312
 Available processors, 1
 Max memory, 50724864
@@ -26,17 +26,17 @@ Free memory, 7494656
 This is the last version before [JDK-8146115](https://www.oracle.com/java/technologies/javase/8u191-relnotes.html#JDK-8146115) fix, so avaiable processors and memory are not correctly detected
 
 ```
-docker build -t mistrasteos/containersupport:8u131 --build-arg JAVA_VERSION=8u181 .
+docker build -t mistrasteos/jdkcontainersupport:8u131 --build-arg JAVA_VERSION=8u181 .
 [+] Building 1.7s (11/11) 
 
-docker run --rm -it mistrasteos/containersupport:8u131
+docker run --rm -it mistrasteos/jdkcontainersupport:8u131
 Runtime version, 1.8.0_181
 Available processors, 8
 Max memory, 1442840576
 Total memory, 98566144
 Free memory, 97024512
 
-docker run --cpus=1 --memory=100m --rm -it mistrasteos/containersupport:8u131
+docker run --cpus=1 --memory=100m --rm -it mistrasteos/jdkcontainersupport:8u131
 Runtime version, 1.8.0_181
 Available processors, 8
 Max memory, 1442840576
