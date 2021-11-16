@@ -45,7 +45,7 @@ Free memory, 97024512
 ```
 
 # Links
-* (JDK 8u191 release notes)[https://www.oracle.com/java/technologies/javase/8u191-relnotes.html#JDK-8146115]
-* (https://docs.docker.com/config/containers/resource_constraints/)[https://docs.docker.com/config/containers/resource_constraints/]
-* (Running a JVM inside a container; What you need to know)[https://medium.com/domain-tech/running-jvm-inside-a-container-what-you-need-to-know-aac6fa6c12c8a]
-* (Be Aware of Your (Container) Surroundings)[https://medium.com/97-things/be-aware-of-your-container-surroundings-40d0712fd98a]
+* [JDK 8u191 release note](https://www.oracle.com/java/technologies/javase/8u191-relnotes.html#JDK-8146115)
+* [https://docs.docker.com/config/containers/resource_constraints/](https://docs.docker.com/config/containers/resource_constraints)
+* [Running a JVM inside a container; What you need to know](https://medium.com/domain-tech/running-jvm-inside-a-container-what-you-need-to-know-aac6fa6c12c8a)
+* [Be Aware of Your (Container) Surroundings](https://medium.com/97-things/be-aware-of-your-container-surroundings-40d0712fd98a)
